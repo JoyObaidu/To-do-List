@@ -46,8 +46,9 @@ function newElement() {
     if (inputValue === '') {
         alert("You must write something");
         
-    } else {
-        document.getElementsByClassName("myList").appendChild(li);
+    } else{
+       var myList = document.getElementById("myList");
+       myList.appendChild(li);
     }
     document.getElementById("myInput").value = "";
     var span = document.createElement("SPAN");
